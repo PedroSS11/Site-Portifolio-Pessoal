@@ -14,10 +14,14 @@ Olá pessoal! Este projeto é meu site pessoal com meu portifólio. O projeto es
 
 /**** PRÓXIMAS MELHORIAS ****/
 
-Funcionalidades em JavaScript da Página de portifólio e cotato.
-Uma nova aba para cada projeto do Portifólio, com todos os detalhes, e informações relevantes sobre o projeto.
+- Funcionalidades em JavaScript da Página de portifólio e cotato.
+- Uma nova aba para cada projeto do Portifólio, com todos os detalhes, e informações relevantes sobre o projeto.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
 Projeto desenvolvido com :
 
-HTML5 CSS3 BOOTSTRAP 5
+HTML5 - CSS3 - BOOTSTRAP 5
 
 Obrigado !
