@@ -10,6 +10,7 @@ https://pedrohenrique-webdev.netlify.app
 ==============================
 
 /* PROJETO AINDA EM PRODUÇÃO */
+
 Olá pessoal! Este projeto é meu site pessoal com meu portifólio. O projeto está em constante atualização, visto que estou desenvolvendo os projetos do portifólio para inclui-los no site. Este Site ainda não está 100% finalizado, irá receber melhorias contínuas até ficar com tudo bem certinho.
 
 /**** PRÓXIMAS MELHORIAS ****/
