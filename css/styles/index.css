@@ -103,7 +103,7 @@ header {
 
 /* SECTIONS configs */
 
-#section1, #section2, #section3,
+#section1, #section2,
 #section4 {
 
     height: 100vh;
@@ -144,21 +144,10 @@ header {
 #section1 article p {
     color: #000;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* SECTION2 CFGS */
 
-#cont-sec2 h4 {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#cont-sec2 img {
-    border-bottom: 3px inset #000;
-    border-left: 3px inset #000;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(46,255,253,0.31); 
-    box-shadow: 5px 5px 15px 5px rgba(46,255,253,0.31);
-}
 
 
 
@@ -231,9 +220,22 @@ header {
 
 
 
+/* SECTION2 CFGS */
 
+#cont-sec2 h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
 
+#cont-sec2 img {
+    border-bottom: 3px inset #000;
+    border-left: 3px inset #000;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(46,255,253,0.31); 
+    box-shadow: 5px 5px 15px 5px rgba(46,255,253,0.31);
+}
 
+/* SECTION 2 - SOBRE MIM */
 
 .cidade {
     font-weight: bold;
@@ -275,6 +277,15 @@ header {
     transform: scale(1.1);
 }
 
+.js {
+    transition: all 0.3s ease-in-out;
+}
+
+.js:hover {
+    color: rgb(236, 181, 2);
+    transform: scale(1.1);
+}
+
 .boots {
     transition: all 0.3s ease-in-out;
 }
@@ -294,11 +305,94 @@ header {
 
 
 
+/* Section 3 */
+
+.card-cfg {
+    margin: 1rem;
+    border-color: aquamarine;
+    -webkit-box-shadow: 5px 5px 34px 5px rgba(0,0,0,0.2); 
+    box-shadow: 5px 5px 34px 5px rgba(0,0,0,0.2);
+}
+
+#section3 img {
+    border-bottom: 1px solid #000;
+}
+
+#section3 h4 {
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+}
+
+#section3 a.btn.btn-outline-info {
+    border-color: aquamarine;
+    transition: all 0.3s ease-in;
+}
+
+#section3 a.btn.btn-outline-info:hover {
+    background-color: aquamarine;
+    border-color: #000;
+    color: #fff;
+}
+
+#section3 a.btn.btn-outline-info:active {
+    transform: scale(.1);
+}
+
+/* SECTION 4  */
+
+#section4 h4 {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    color: aquamarine;
+    letter-spacing: 0.2rem;
+}
+
+#section4 p {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+}
+
+#section4 p span a{
+    color: #fff;
+    transition: all 0.3s ease-out;
+    letter-spacing: 0.2rem;
+
+}
+
+#section4 p span a:hover {
+    color: aquamarine;
+}
+
+#section4 {
+    background-image: url(/images/6222603.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cont-sec4 {
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+
+
 /* Media-queries */
 
 @media (max-width:279px) {
     header {
         font-size: 0.5rem;
+    }
+
+    #cont-sec4 {
+        text-align: center;
+        font-size: 0.3rem;
     }
 }
 
@@ -307,6 +401,20 @@ header {
         font-size: 0.6rem;
         letter-spacing: 0.1rem;
     }
+
+    section {
+        margin-bottom: 5rem;
+    }
+
+    
+    
+}
+
+@media (max-width:300px) {
+    #botao-s {
+        display: none;
+    }
+
 }
 
 @media (max-width:340px) {
@@ -314,20 +422,38 @@ header {
         display: none;
     }
 
-    #cont-sec2.foto-perfil{
-        width: 200px;
+    #cont-sec4 {
+        text-align: center;
+        font-size: 0.8rem;
     }
+
+    #cont-sec2 .foto-perfil {
+        display: none;
+    }
+
 }
+
+    
+
 
 @media (max-width:447px) {
-    #cont-sec2.foto-perfil {
-        width: 10vw;
+    
+    #cont-sec2  {
+        font-size: 0.5rem;
+    }
+
+    #cont-sec2 .cidade {
+        font-size: 0.7rem;
     }
 }
 
-@media (max-width:448px) {
+@media (max-width:448.98px) {
     #section1 article h2 {
         font-size: 7rem;
+    }
+    
+    #cont-sec2 .foto-perfil {
+        max-width: 250px;
     }
 }
 
@@ -350,18 +476,26 @@ header {
     }
 }
 
+@media (max-width: 767.98px) {
+    header {
+        text-align: center;
+    }
+    #section1 article p {
+        font-size: 0.8rem;
+    }
+}
 
 @media (min-width: 700.908px) {
     #section1 article h2 {
         font-size: 3rem;
     }
-}
 
-@media (max-width: 767.98px) {
-    header {
-        text-align: center;
+    #section1 article p {
+        font-size:1.1rem;
     }
 }
+
+
 
 @media (min-width:768px) {
     header {
@@ -404,6 +538,7 @@ header {
     }
 
     
+    
 }
 
 
@@ -415,6 +550,7 @@ header {
     header #nav1 {
         text-align: center;
     }
+    
 
     
 }
