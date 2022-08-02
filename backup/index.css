@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+.borda {
+    border: 1px solid red;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    background-image: url(/images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #000;
+}
+
+
+/* Botões */
+#buttons button a {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#buttons button a:hover{
+    color: aquamarine;
+}
+
+#buttons button.btn {
+    border-color: aquamarine;
+    transition: all 0.3s ease-in-out;
+}
+
+#buttons button.btn:hover{
+    border-color: #000;
+
+}
+
+#buttons button{
+    transition: all 0.1s ease-in;
+}
+
+#buttons button:active {
+    transform: scale(.2);
+}
+
+
+/* Configs div do banner topo */
+
+.animationFadeinFadeOut:hover {
+    animation: fadeInDadeOut 6s linear infinite;
+    
+} 
+
+
+@keyframes fadeInDadeOut {
+    0% {opacity: 1;
+        transform: scale(1);
+    }
+    10% {opacity: 0.8;
+        transform: scale(0.9);
+    }
+    20% {opacity: 0.6;
+        transform: scale(0.8);
+    }
+    30% {opacity: 0.4;
+        transform: scale(0.7);
+    }
+    40% {opacity: 0.2;
+        transform: scale(0.6);
+    }
+    50% {opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {opacity: 0.2;
+        transform: scale(0.6);
+    }
+    70% {opacity: 0.4;
+        transform: scale(0.7);
+    }
+    80% {opacity: 0.6;
+        transform: scale(0.8);
+    }
+    90% {opacity: 0.8;
+        transform: scale(0.9);
+    }
+    100% {opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+/* SECTIONS configs */
+
+#section1, #section2, #section3,
+#section4 {
+
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION 1 CFGS */
+/* Animação Título */
+.animate-charcter{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    aquamarine 0%,
+    aquamarine 29%,
+    blue 67%,
+    white 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-weight: bold;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#section1 article p {
+    color: #000;
+    font-weight: bold;
+}
+
+/* SECTION2 CFGS */
+
+#texto-sec2 {
+    background-color: rgba(255,255,255,0.4);
+}
+
+#section2 img {
+    box-shadow: 5px 5px 50px 5px rgba(46,255,253,0.53);
+}
+
+#section2 p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* Cfg Botões de mudar de seção in page */
+
+.botao-seta{
+    color: aquamarine;
+    font-size: 1.5rem;
+    border:2px solid transparent;
+    border-radius: 50px;
+    padding: 0.5rem;
+    animation: blink2 3s infinite normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-seta:hover{
+    animation: none;
+    color: #000;
+    background-color: rgba(255,255,255,0.4);
+    border-color: aquamarine;
+}
+
+
+
+@keyframes blink2 {
+    from {
+        color: aquamarine;
+        border-color: rgba(0,0,0,0.6);
+    }
+    to {
+        color: transparent;
+        border-color: transparent;
+    }
+}
+
+
+/* Nav itens padding-margin e animação */
+
+.nav-it-cfg  {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2rem;
+
+    transition: all 0.4s ease-in-out;
+
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    letter-spacing: 0.3rem;
+    color: #000;
+
+    background-color: #eaeaea;
+    border-color:aquamarine ;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+    transform: scale(.3);
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+/* Media-queries */
+
+@media (max-width:279px) {
+    header {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width:280px) {
+    header {
+        font-size: 0.6rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media (max-width:340px) {
+    #buttons button a span{
+        display: none;
+    }
+}
+
+@media (max-width:448px) {
+    #section1 article h2 {
+        font-size: 7rem;
+    }
+}
+
+
+@media (max-width:527.98px) {
+    #section1 article h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 575.98px) {
+    header {
+     font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width: 700.908px) {
+    #section1 article h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    header {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+ 
+}
+
+
+@media (min-width: 991px) {
+    header {
+        font-size: 1rem;
+
+    }
+
+    nav ul li a span {
+        display: inline-block;
+    }
+
+    #section1 article h2 {
+        font-size: 3.4rem;
+    }
+}
+
+
+
+@media (min-width: 1399.98px) {
+    #banner {
+        background-image: none;
+    }
+
+    header #nav1 {
+        text-align: center;
+    }
+
+    
+}
+
