@@ -1,5 +1,6 @@
-Site-Portifolio-Pessoal
-Site pessoal e portifólio, desenvolvido por mim.
+Site Pessoal
+
+Site pessoal e portifólio.
 
 ==============================
 
@@ -16,7 +17,9 @@ Olá pessoal! Este projeto é meu site pessoal com meu portifólio. O projeto es
 /**** PRÓXIMAS MELHORIAS ****/
 
 - Funcionalidades em JavaScript da Página de portifólio e cotato.
-- Uma nova aba para cada projeto do Portifólio, com todos os detalhes, e informações relevantes sobre o projeto.
+
+
+- Uma nova aba para cada projeto do Portifólio, com todos os detalhes, e informações relevantes sobre o projeto. ✔ (DONE)
 
 --------------------------------------------------------------------------------------------------------------------
 
