@@ -11,7 +11,7 @@ html, body {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     max-width: 100vw;
-    background-image: url(../styles/bg-total.jpg);
+    background-image: url(/images/bg-total.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -376,12 +376,6 @@ header {
     color: aquamarine;
 }
 
-#section4 {
-    background-image: url(../styles/bg-total.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 #cont-sec4 {
     background-color: rgba(0,0,0,0.5);
