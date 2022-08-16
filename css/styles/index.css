@@ -301,6 +301,16 @@ header {
 
 .git:hover {
     color: #e83a0a;
+    transform: scale(1.1);
+}
+
+.react {
+    transition: all 0.3s ease-in-out;
+}
+
+.react:hover {
+    color: #6cb3ff;
+    transform: scale(1.1);
 }
 
 
