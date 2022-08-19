@@ -104,7 +104,7 @@ header {
 /* SECTIONS configs */
 
 #section1, #section2,
-#section4 {
+#section4, #section5 {
 
     height: 100vh;
     display: flex;
@@ -414,6 +414,57 @@ button.carousel-control-next {
 button.carousel-control-prev {
     background-color: transparent;
     border: none;
+}
+
+
+/** SECTION 5 */
+
+.form label, 
+.form input, 
+.form textarea, 
+.form button {
+    display: inline-block;
+    width: 100%;
+}
+
+#section5 h1 {
+    color: aquamarine;
+
+}
+
+#section5 label {
+    font-weight: bold;
+}
+
+#section5 input {
+    border:2px solid aquamarine;
+    border-radius: 8px;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+#section5 textarea {
+    border:2px solid aquamarine;
+    height: 8rem;
+
+}
+
+#section5 .btn-outline-primary {
+    border-color: aquamarine;
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+
+#section5 .btn-outline-primary:hover {
+    background-color: aquamarine;
+    border-color: #000;
+    color: #fff;
+}
+
+
+.form input {
+    margin-bottom: 1rem;
 }
 
 /* Media-queries */
