@@ -467,6 +467,13 @@ button.carousel-control-prev {
     margin-bottom: 1rem;
 }
 
+
+/** OBRIGADO */
+
+#mensagem {
+    font-weight: bold;
+    
+}
 /* Media-queries */
 
 @media (max-width:279px) {
